@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title> Quick Quiz </title>
+<meta charset = "utf-8">
+<script type = "text/javascript"  src = "j.js" >
+</script>
+<style>
+	
+body{
+    background-image: url("ss.jpg");
+     background-repeat: no-repeat;
+     background-position: center;
+	 background-attachment: fixed;
+     background-color: rgb(204, 231, 214);	 
+}
+
+p{
+    text-align:center;
+    font-size:30px;
+}
+
+</style>	
+</head>
+<body>
+<a href = "homepage.html"><img src = "home.png" alt = " home" style="width:55px;height:55px;" /> Home Page </a>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:history.go(-1)">Back</a>
+<form action="">
+<p>
+Answer the question fast as you can :)
+</p>
+</br>
+</br>
+
+<font color="red">Question 1:</font> How many apple <img src="apple.png" width="20" height="20" />?  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; <font color="red">Question 2:</font> How many fruits <img src="apple.png" width="20" height="20" /><img src="banna.png" width="20" height="20" /><img src="banna.png" width="20" height="20" />?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp;&nbsp; <font color="red">Question 3:</font> How many apples<img src="apple.png" width="20" height="20" />+<img src="apple.png" width="20" height="20" />?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;   &nbsp; <font color="red">Question 4:</font> How many fruits <img src="banna.png" width="20" height="20" /><img src="banna.png" width="20" height="20" />+<img src="banna.png" width="20" height="20" /><img src="banna.png" width="20" height="20" /> - <img src="apple.png" width="20" height="20" /><img src="apple.png" width="20" height="20" />?
+<br><br><input type="text" id = "pass1"  size ="30">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;   &nbsp; &nbsp; <input type="text" id = "pass2"  size ="30">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;   &nbsp; &nbsp; &nbsp;<input type="text" id = "pass3"  size ="30">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" id = "pass4"  size ="30">
+<br><button onclick="question1()">Check if your answer is correct?</button>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;   &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<button onclick="question2()">Check if your answer is correct?</button>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;   &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;    &nbsp;<button onclick="question3()">Check if your answer is correct?</button>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<button onclick="question4()">Check if your answer is correct?</button>
+</br>
+</br>
+</br>
+<font color="red">Question 5:</font> How many bannans <img src="banna.png" width="20" height="20" /> - <img src="banna.png" width="20" height="20" />? &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<font color="red">Question 6:</font> How many furits <img src="banna.png" width="20" height="20" /><img src="banna.png" width="20" height="20" />-<img src="apple.png" width="20" height="20" />?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; <font color="red">Question 7:</font> How many furits <img src="banna.png" width="20" height="20" />+<img src="apple.png" width="20" height="20" /><img src="apple.png" width="20" height="20" /><img src="apple.png" width="20" height="20" />?&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<font color="red">Question 8:</font> How many furits <img src="banna.png" width="20" height="20" /><img src="banna.png" width="20" height="20" /><img src="banna.png" width="20" height="20" />+<img src="apple.png" width="20" height="20" /><img src="apple.png" width="20" height="20" /><img src="apple.png" width="20" height="20" />?
+<br><br><input type="text" id = "pass5"  size ="30">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <input type="text" id = "pass6"  size ="30">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <input type="text" id = "pass7"  size ="30">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<input type="text" id = "pass8"  size ="30">
+<br><button onclick="question5()">Check if your answer is correct?</button> &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;<button onclick="question6()">Check if your answer is correct?</button>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="question7()">Check if your answer is correct?</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="question8()">Check if your answer is correct?</button>
+</form>
+</body>
+</html>
